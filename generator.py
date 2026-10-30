@@ -162,7 +162,7 @@ def main() -> None:
         while True:
             password = (
                 "4"
-                if args.rsa
+                if args.ecdsa
                 else generate_password(
                     length=args.length,
                     fuck_percent=args.fuck,
