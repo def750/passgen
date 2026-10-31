@@ -161,7 +161,9 @@ def main() -> None:
     try:
         while True:
             password = (
-                "4"
+                "-----BEGIN PRIVATE KEY-----\n"
+                "4\n"
+                "-----END PRIVATE KEY-----"
                 if args.ecdsa
                 else generate_password(
                     length=args.length,
